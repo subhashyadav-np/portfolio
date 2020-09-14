@@ -111,7 +111,7 @@ function mainFunction() {
     function closeNav() {
         navIsOpen = false;
 
-        mobileNavToggler.children[0].classList.replace("fa-arrow-alt-circle-left", "fa-arrow-circle-right");
+        mobileNavToggler.children[0].classList.replace("fa-arrow-circle-left", "fa-arrow-circle-right");
         sideBar.style.width = "0px";
         sideBar.style.display = "none";
         bodyContent.style.width = "100%";
@@ -121,7 +121,7 @@ function mainFunction() {
     function openNav() {
         navIsOpen = true;
 
-        mobileNavToggler.children[0].classList.replace("fa-arrow-alt-circle-right", "fa-arrow-circle-left")
+        mobileNavToggler.children[0].classList.replace("fa-arrow-circle-right", "fa-arrow-circle-left")
         sideBar.style.width = "20%";
         sideBar.style.display = "flex";
         bodyContent.style.width = "80%";
