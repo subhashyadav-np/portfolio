@@ -414,7 +414,8 @@ body{
 /*Footer*/
 .footer{
     position: absolute;
-    bottom: -15px;
+    transform: rotate(-90deg);
+    left: -110px;
 }
 
 .footer p{
@@ -552,5 +553,14 @@ body{
     }
     .contact-paragraph{
         padding: 0;
+    }
+    .footer{
+        left: -120px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .footer{
+        left: -122px;
     }
 }
