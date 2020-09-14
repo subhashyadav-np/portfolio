@@ -494,8 +494,12 @@ body{
     .mobile-nav-toggler{
         display: block;
     }
+    .sidebar ul{
+        margin-top: 30px;
+    }
     .sidebar ul li{
         padding: 10px 0;
+        font-size: 35px;
     }
     .body{
         height: 97vh;
@@ -509,9 +513,6 @@ body{
     .landing-items h6{
         margin-top: 20px;
         font-size: 14px;
-    }
-    .sidebar ul li{
-        font-size: 35px;
     }
     .section-title{
         font-size: 30px;
