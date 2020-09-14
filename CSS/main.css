@@ -87,10 +87,6 @@ body{
     margin-left: 13px;
     z-index: 50;
 }
-.mobile-nav-toggler i{
-    background: #000;
-    border-radius: 50px;
-}
 
 .body .sidebar{
     width: 20%;
