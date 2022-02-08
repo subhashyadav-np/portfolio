@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testimonials | Subhash Yadav | Web Developer</title>
+    <meta name="keywords" content="Subhash Yadav, Subhash Yadav Web Developer, Web Developer In Nepal, Laravel Developer In
+    Nepal, Laravel Developer, Web Developer, Subhash Developer, Website Development, Website Developer, Subhash Yadav
+    Janakpur, Web Developer In Janakpur, Laravel Freelancer" />
+    <meta name="author" content="Subhash Yaav" />
+    <meta name="robots" content="" />
+    <meta name="description"
+        content="I am a creative Web Developer Specialized In PHP/Laravel having more than 3 years of experiences in this field. I work with companies and individuals. I create professional and attractive built according to web standards. I am working on a digital dream with my 200% of perfection." />
+    <meta property="og:title" content="" />
+    <meta property="og:description"
+        content="I am a creative Web Developer Specialized In PHP/Laravel having more than 3 years of experiences in this field. I work with companies and individuals. I create professional and attractive built according to web standards. I am working on a digital dream with my 200% of perfection." />
+    <meta property="og:image" content="" />
+
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Bootstrap5 -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- owl crausel -->
+    <link rel="stylesheet" href="assets/libs/owlcarousel/owl.carousel.min.css">
+    <style>
+        /* Testimonial Crausel */
+        .testi-crausel-main .testi-card .box {
+            transition: all 0.3s ease;
+            height: 245px;
+            overflow: hidden;
+            border-radius: 8px;
+            background: rgba(34, 34, 34, 0.6);
+            margin: 0;
+        }
+
+        .testi-dp-main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .testi-dp {
+            height: 215px;
+            width: 215px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .testi-carousel-img img {
+            width: 100%;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+
+        .owl-dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .owl-dot {
+            height: 13px;
+            width: 13px;
+            margin: 0 5px;
+            outline: none !important;
+            border-radius: 50%;
+            border: 2px solid var(--primary) !important;
+            transition: all 0.3s ease;
+        }
+
+        .owl-dot.active {
+            width: 35px;
+            border-radius: 14px;
+        }
+
+        .owl-dot.active,
+        .owl-dot:hover {
+            background: var(--primary) !important;
+        }
+
+        @media screen and (max-width:768px) {
+            .testi-crausel-main .TestiCarousel .testi-card .box {
+                height: fit-content;
+            }
+
+            .testi-dp {
+                height: 100%;
+                width: 100%;
+            }
+
+            .quote {
+                text-align: center
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="preLoader">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <div class="body">
+
+        <!-- Sidebar -->
+        <div class="mobile-nav-toggler">
+            <i class="fa fa-chevron-left"></i>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li id="navHome">
+                    <a href="index.html" class="active">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </li>
+                <li id="navAbout">
+                    <a href="about.html" class="">
+                        <i class="fa fa-user-circle"></i>
+                    </a>
+                </li>
+                <li id="navService">
+                    <a href="service.html" class="">
+                        <i class="fa fa-users-cog"></i>
+                    </a>
+                </li>
+                <li id="navPortfolio">
+                    <a href="portfolio.html" class="">
+                        <i class="fa fa-laptop"></i>
+                    </a>
+                </li>
+                <li id="navExperience">
+                    <a href="extras.html" class="active">
+                        <i class="fa fa-arrow-circle-left"></i>
+                    </a>
+                    <div style="font-size: 8px; margin-top: -14px; margin-left: 15px;"
+                        class="text-primary none-except-pc">
+                        Back
+                    </div>
+                </li>
+                <li id="navContact">
+                    <a href="contact.html" class="">
+                        <i class="fa fa-phone-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar Ends -->
+
+        <!-- contant start -->
+        <div class="content">
+            <div class="container">
+                <h1 class="section-title text-center my-4"><i class="fa fa-users"></i> Testimonials</h1>
+                <h6 class="section-sub-title section-sub-title-of-about">what clients says</h6>
+                <div class="row mt-5">
+                    <div class="col-12 testi-crausel-main">
+                        <div class="TestiCarousel owl-carousel">
+
+                            <!-- testimonial item -->
+                            <div class="testi-card">
+                                <div class="box row pt-3">
+                                    <div class="col-xl-3 testi-dp-main">
+                                        <div class="testi-dp">
+                                            <img src="assets/images/user.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-9 pt-4 pb-4 px-2 quote text-primary">
+                                        <h5>
+                                            <span class="badge bg-primary text-dark text-uppercase">Subhash Yadav
+                                                <small>(Nepal)</small></span>
+                                        </h5>
+                                        <p class="pt-2 px-0 mx-0 text-white" style="text-align: justify;">
+                                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatem
+                                            esse, fugiat maxime veniam laborum tempore odio adipisci velit? Aperiam,
+                                            sit? Ut aspernatur aperiam deserunt nobis vero, maiores optio vitae!"
+                                        </p>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="text-primary text-right">- Web Developer</h6>
+                                            <small class="text-white">
+                                                <i class="fa fa-star text-primary"></i>
+                                                <i class="fa fa-star text-primary"></i>
+                                                <i class="fa fa-star text-primary"></i>
+                                                <i class="fa fa-star text-primary"></i>
+                                                <i class="fa fa-star text-primary"></i>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- testimonial item -->
+                            <div class="testi-card">
+                                <div class="box row pt-3">
+                                    <div class="col-xl-3 testi-dp-main">
+                                        <div class="testi-dp">
+                                            <img src="assets/images/user.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-9 pt-4 pb-4 px-2 quote text-primary">
+                                        <h5>
+                                            <span class="badge bg-primary text-dark text-uppercase">Subhash Yadav
+                                                <small>(Nepal)</small></span>
+                                        </h5>
+                                        <p class="pt-2 px-0 mx-0 text-white" style="text-align: justify;">
+                                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatem
+                                            esse, fugiat maxime veniam laborum tempore odio adipisci velit? Aperiam,
+                                            sit? Ut aspernatur aperiam deserunt nobis vero, maiores optio vitae!"
+                                        </p>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="text-primary text-right">- Web Developer</h6>
+                                            <small class="text-white">
+                                                <i class="fa fa-star text-primary"></i>
+                                                <i class="fa fa-star text-primary"></i>
+                                                <i class="fa fa-star text-primary"></i>
+                                                <i class="fa fa-star text-primary"></i>
+                                                <i class="fa fa-star text-primary"></i>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content ends -->
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; Copyright 2020 | Designed By Subhash Yadav</p>
+    </div>
+
+    <!-- Main JS -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- jquery cdn -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- popperjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <!-- Owl Crausel js -->
+    <script src="assets/libs/owlcarousel/owl.carousel.min.js"></script>
+    <!-- custom script -->
+    <script>
+        // testimonial crausel initialize
+        $(".TestiCarousel").owlCarousel({
+            margin: 0,
+            loop: true,
+            autoplay: true,
+            autoplayTimeOut: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false,
+                },
+                600: {
+                    items: 1,
+                    nav: false,
+                },
+                1000: {
+                    items: 1,
+                    nav: false,
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>

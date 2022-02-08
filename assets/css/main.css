@@ -1,0 +1,777 @@
+/*
+THEME NAME: Subhash Yadav's Modern Portfolio 
+AUTHOR: Subhash Yadav
+AUTHOR URI: https://subhashyadav.com.np
+VERSION: 1.0.0
+*/
+
+/*
+======= Theme Contents =======
+0.1. Browser Resets
+0.2. Preloader Start
+0.3. Bootstrap Resets
+
+1.0. Body Layout
+1.1. HomePage
+1.2. AboutPage
+1.3. ServicePage
+1.4. PortfolioPage
+1.5. ExperiencesPage
+1.6. SkillsPage
+1.7. ContactPage
+
+2.0. Footer
+3.0. Reusable CSS
+4.0. Media Queries
+5.0. Scrollbar Styling
+======= Theme Contents =======
+*/
+
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"); */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+/*==!! 0.1. Browser Resets Start !!==*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  --primary: #a1fe6b;
+  --secondary: #222;
+  --terniry: #62b246;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  padding: 25px;
+}
+body,
+textarea,
+input,
+select {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+/*==!! </ 0.1. Broowser Resets End > !!==*/
+
+/*==!! 0.2. Preloader Start !!==*/
+#preLoader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid var(--primary);
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: var(--primary);
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+/*==!! </ 0.2. Preloader End > !!==*/
+
+/*==!! 0.3. Bootstrap Resets Start !!==*/
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.text-primary {
+  color: var(--primary) !important;
+}
+.text-terniry {
+  color: var(--terniry) !important;
+}
+.bg-primary {
+  background: var(--primary) !important;
+}
+.btn-primary {
+  background: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+  color: var(--secondary) !important;
+}
+.border-primary {
+  border-color: var(--primary) !important;
+}
+.btn-outline-primary {
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  border: 1px solid var(--primary) !important;
+  background: var(--primary) !important;
+  color: var(--secondary) !important;
+}
+/*==!! </ 0.3. Bootstrap Resets End > !!==*/
+
+/* ||----- 
+Content Style Start Here 
+-----|| */
+
+/*==!! 1.0. Body Layout Satrt !!==*/
+.body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#0000009b, #0000009b), url(../images/bg/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 5px 5px 10px #222;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.mobile-nav-toggler {
+  display: none;
+  position: absolute;
+  background: #a1fe6b4b;
+  font-size: 25px;
+  height: 35px;
+  width: 35px;
+  margin-top: 15px;
+  margin-left: 18px;
+  z-index: 50;
+  text-align: center;
+}
+.mobile-nav-toggler i {
+  display: block;
+  padding-top: 5px;
+  color: #ffffff85;
+}
+.body .sidebar {
+  width: 20%;
+  height: 100%;
+  border: 2px solid #ffffff9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  transition: all 200ms linear;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li {
+  font-size: 50px;
+  color: #fff;
+  padding: 7px 0;
+  cursor: pointer;
+}
+.sidebar ul li a {
+  color: #fff;
+}
+.sidebar ul li a:hover {
+  color: var(--primary) !important;
+  transition: all 300ms linear;
+}
+.sidebar ul li a.active {
+  color: var(--primary) !important;
+}
+.body .content {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ffffff9f;
+  border-left: none;
+  padding: 15px;
+  overflow-y: scroll;
+}
+/*==!! </ 1.0. Body Layout End > !!==*/
+
+/*==!! 1.1. HomePage Satrt !!==*/
+.content #homePage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-items {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.landing-items h1 {
+  font-size: 100px;
+  font-weight: 900;
+  color: var(--primary);
+  text-shadow: 4px 4px 4px var(--terniry);
+  font-family: "Segoe UI";
+  font-weight: 900 !important;
+}
+.landing-items h6 {
+  font-size: 20px;
+  line-height: 25px;
+  color: #fff;
+  text-shadow: 0 0 5px var(--primary), 0 0 15px gold;
+  letter-spacing: 5px;
+}
+/*==!! </ 1.1. HomePage End > !!==*/
+
+/*==!! 1.2. Aboutpage Satrt !!==*/
+.profile-img {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--secondary);
+  border: 3px solid var(--secondary);
+  height: fit-content;
+  position: relative;
+}
+.profile-img::before {
+  content: "My Name Is";
+  color: var(--primary);
+  font-size: 14px;
+  padding-top: 2px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  display: inline-block;
+  z-index: 2;
+  height: 26px;
+  width: 150px;
+  background: var(--secondary);
+  border-radius: 0% 100% 19% 81% / 100% 0% 100% 0%;
+}
+.profile-img::after {
+  content: "Subhash Yadav";
+  color: var(--primary);
+  font-size: 14px;
+  padding-top: 4px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  display: inline-block;
+  z-index: 2;
+  height: 26px;
+  width: 150px;
+  bottom: 0;
+  right: 0;
+  background: var(--secondary);
+  border-radius: 19% 81% 0% 100% / 100% 0% 100% 0%;
+}
+.profile-img img {
+  width: 100%;
+  opacity: 0.8;
+}
+.about-detail {
+  font-size: 18px;
+  opacity: 0.9;
+}
+.social-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0;
+  border: 4px solid var(--primary);
+}
+.social-container a {
+  margin: 0px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  transition: ease 0.4s;
+  color: #fff;
+  border-right: 4px solid var(--primary);
+}
+.social-container a:nth-last-child(1) {
+  border-right: 0px;
+}
+.social-container .facebook {
+  background-color: #3b5998;
+}
+.social-container .instagram {
+  background-color: #bc2a8d;
+}
+.social-container .twitter {
+  background-color: #00acee;
+}
+.social-container .linkedin {
+  background-color: #244a9c;
+}
+.social-container .youtube {
+  background-color: #ff0000;
+}
+.social-container a:hover {
+  background-color: var(--primary);
+}
+.social-container .facebook:hover {
+  color: #3b5998;
+}
+.social-container .instagram:hover {
+  color: #bc2a8d;
+}
+.social-container .twitter:hover {
+  color: #00acee;
+}
+.social-container .linkedin:hover {
+  color: #244a9c;
+}
+.social-container .youtube:hover {
+  color: #ff0000;
+}
+/*==!! </ 1.2. AboutPage End > !!==*/
+
+/*==!! 1.3. ServicePage Satrt !!==*/
+.service-div-main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-btn {
+  width: 100%;
+  border-radius: 0 !important;
+  height: 82px;
+}
+.service-div-toggle {
+  color: #fff;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 300px;
+  overflow: hidden;
+  transition: all 300ms linear;
+}
+.service-div-toggle.open {
+  height: 0px;
+  padding: 0;
+  overflow: hidden;
+}
+.service-img {
+  height: 80px;
+  width: 80px;
+  margin: 30px auto;
+  background: var(--primary);
+  transform: rotate(45deg);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-img i {
+  transform: rotate(-45deg);
+  color: #222 !important;
+  font-size: 45px;
+  text-align: center;
+}
+/*==!! </ 1.3. ServicePage End > !!==*/
+
+/*==!! 1.4. PortfolioPage Satrt !!==*/
+.port-item {
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.port-detail {
+  transition: all 450ms linear;
+}
+.port-item .port-img {
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.port-item:hover .port-detail {
+  margin-top: -220px;
+}
+/*==!! </ 1.4. PortfolioPage End > !!==*/
+
+/*==!! 1.5. ExperiencesPage Satrt !!==*/
+.experinece-div {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.experinece-div .certificate-img {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -200px;
+  overflow: hidden;
+  transition: all 300ms linear;
+  cursor: pointer;
+}
+.experinece-div:hover .certificate-img {
+  margin-top: 0;
+}
+.experinece-div .certificate-img img {
+  width: 100%;
+}
+.exp-title-btn {
+  border-radius: 0;
+}
+.experinece-div .btn-lg {
+  height: 82px;
+  overflow: hidden;
+  border-radius: 0 !important;
+}
+.experinece-div .exp-para {
+  padding: 5px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0.9;
+}
+/*==!! </ 1.5. ExperiencesPage End > !!==*/
+
+/*==!! 1.6. SkillsPage Satrt !!==*/
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+.skill label {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.skill-bar {
+  margin-top: 5px;
+  height: 10px;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.skill-bar-inner {
+  position: relative;
+  height: 10px;
+  width: var(--widthPercent);
+  background: linear-gradient(45deg, #62b246, #b9fe6b);
+  border-radius: 2px;
+  border-right: 5px solid #222;
+  transition: all 300ms linear !important;
+}
+/*==!! </ 1.6. SkillsPage End > !!==*/
+
+/*==!! 1.7. ContactPage Satrt !!==*/
+.contact-info-col {
+  margin-top: 5px;
+}
+.contact-info {
+  width: fit-content;
+  height: 100%;
+  margin: auto;
+}
+.contact-info div {
+  margin: 12px 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contact-info div .icon {
+  color: var(--secondary);
+  background: var(--primary);
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 4px;
+}
+.contact-info div .info {
+  color: rgba(255, 255, 255, 0.794);
+  display: block;
+  padding-top: 4px;
+}
+.contact-form label {
+  color: #eee5e5;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-left: 2px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select {
+  outline: none;
+  border: none;
+  background: none;
+  height: 30px;
+  border-radius: 4px;
+  padding: 0 8px;
+  border-bottom: 1px solid #fff;
+  color: rgba(255, 255, 255, 0.555);
+  transition: 0.4s linear;
+}
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-bottom: 2px solid var(--primary);
+}
+.contact-form textarea {
+  padding: 5px 8px;
+  outline: none;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  border-bottom: 1px solid #fff;
+  color: rgba(255, 255, 255, 0.444);
+}
+/*==!! </ 1.7. ContactPage End > !!==*/
+
+/*==!! 2.0. Footer Satrt !!==*/
+.footer {
+  position: absolute;
+  left: -130px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+}
+.footer p {
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 1px;
+}
+/*==!! </ 2.0. Footer End > !!==*/
+
+/*==!! 3.0. Reusable Css Satrt !!==*/
+.section-title {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  user-select: none;
+  font-family: "Segoe UI";
+}
+.section-sub-title {
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  background: var(--primary);
+  color: #222;
+  width: fit-content;
+  padding: 2px 20px;
+  border-radius: 50px 0 50px 0;
+  user-select: none;
+}
+.section-sub-title-of-about {
+  padding: 0 50px;
+}
+/*==!! </ 3.0. Reusable Css End > !!==*/
+
+/*==!! 4.0. Media Queries Satrt !!==*/
+@media screen and (max-width: 925px) {
+  .none-except-pc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-div-toggle {
+    height: 480px;
+    overflow: hidden;
+  }
+  .profile-img {
+    margin-top: 50px;
+  }
+  .service-div button,
+  .experinece-div button {
+    font-size: 17px;
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0px;
+  }
+  .body .sidebar {
+    border: 2px solid #ffffff41;
+    width: 25%;
+  }
+  .body .content {
+    border: 2px solid #ffffff41;
+    border-left: none;
+  }
+  .mobile-nav-toggler {
+    display: block;
+  }
+  .sidebar ul {
+    margin-top: 30px;
+    padding: 0;
+  }
+  .sidebar ul li {
+    padding: 10px 0;
+    font-size: 35px;
+  }
+  .body .content {
+    padding: 15px 0px;
+    padding-bottom: 60px;
+  }
+  .landing-items h1 {
+    font-size: 50px;
+  }
+  .landing-items h6 {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+  .section-sub-title {
+    font-size: 14px;
+  }
+  .profile-img {
+    margin-top: 0;
+  }
+  .about-detail {
+    margin-top: 20px;
+  }
+  .social-container a {
+    margin: 0px;
+    height: 35px;
+    width: 35px;
+    font-size: 18px;
+  }
+  .service-div-toggle {
+    height: fit-content;
+    overflow: hidden;
+  }
+  .service-div button,
+  .experinece-div button {
+    font-size: 17px;
+    padding: 15px 0;
+  }
+  .port-item .port-img img {
+    min-width: initial;
+  }
+  .experinece-div {
+    height: 290px;
+  }
+  .experinece-div .certificate-img {
+    height: 290px;
+    margin-top: -290px;
+  }
+  .experinece-div .btn-lg {
+    height: fit-content;
+  }
+  .btn-extra-text {
+    display: none;
+  }
+  .contact-info-col {
+    order: 2;
+  }
+  .contact-form-col {
+    order: 1;
+  }
+  .contact-info div .info {
+    font-size: 15px;
+    padding-top: 8px;
+  }
+  .footer {
+    left: -135px;
+    display: none;
+  }
+}
+/*==!! </ 4.0. Media Queries End > !!==*/
+
+/*==!! 5.0. Scrollbar Styling Satrt !!==*/
+::-webkit-scrollbar {
+  width: 4px;
+  background: transparent;
+  opacity: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+@media screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+}
+/*==!! </ 5.0. Scrollbar Styling End > !!==*/
+
+/*
+THEME NAME: Subhash Yadav's Modern Portfolio 
+AUTHOR: Subhash Yadav
+AUTHOR URI: https://subhashyadav.com.np
+VERSION: 1.0.0
+*/

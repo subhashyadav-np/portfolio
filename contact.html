@@ -47,7 +47,7 @@
         <div class="sidebar">
             <ul>
                 <li id="navHome">
-                    <a href="index.html" class="active">
+                    <a href="index.html" class="">
                         <i class="fa fa-home"></i>
                     </a>
                 </li>
@@ -75,7 +75,7 @@
                     </div>
                 </li>
                 <li id="navContact">
-                    <a href="contact.html" class="">
+                    <a href="contact.html" class="active">
                         <i class="fa fa-phone-alt"></i>
                     </a>
                 </li>
@@ -85,18 +85,57 @@
 
         <!-- contant start -->
         <div class="content">
-            <!--Home Page Start-->
-            <div id="homePage">
-                <div class="landing-items">
-                    <h1>Subhash Yadav</h1>
-                    <h6>Web Developer And UI Designer</h6>
-                    <a href="contact.html" class="btn btn-outline-primary btn-lg mt-3 px-5"><i
-                            class="fa fa-angle-left"></i>/<i class="fa fa-angle-right"></i> Hire Me</a>
-                    <p class="mt-5" style="opacity: .4; font-size: 14px; letter-spacing: 2px;">&copy; 2020 | Designed By
-                        Myself</p>
+            <!--Contact Start Here-->
+            <div id="contactPage">
+                <div class="container">
+                    <h1 class="section-title text-center my-4"><i class="fa fa-phone-alt"></i> Contact Me</h1>
+                    <h6 class="section-sub-title">Lets work together.</h6>
+                    <!--Row-->
+                    <div class="row d-flex mt-5">
+                        <div class="col-xl-6 col-md-12 contact-info-col">
+                            <div class="contact-info">
+                                <div class="contact-info-email">
+                                    <span><a href="mailto:info@subhashyadav.com.np" class="icon"><i
+                                                class="fa fa-envelope-open"></i></a></span>
+                                    <span><a href="mailto:info@subhashyadav.com.np"
+                                            class="info">info@subhashyadav.com.np</a></span>
+                                </div>
+                                <div class="contact-info-phone">
+                                    <span><a href="tel:9801978663" class="icon"><i
+                                                class="fa fa-phone-alt"></i></a></span>
+                                    <span><a href="tel:9801978663" class="info">9809636934 , 9801978663</a></span>
+                                </div>
+                                <div class="contact-info-location">
+                                    <span><a href="#" class="icon"><i class="fas fa-map-marker-alt"></i></a></span>
+                                    <span><a href="#" class="info">Janakpur, Nepal 45600</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-12 contact-form-col">
+                            <form action="#" method="POST" class="contact-form">
+                                <label for="name"><i class="fa fa-user"></i> Name</label>
+                                <input type="text" id="name" name="name" class="input-group" placeholder="eg. John Doe"
+                                    required autocomplete="off">
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="email" id="email" name="email" class="input-group"
+                                    placeholder="example@email.com" required autocomplete="off">
+                                <label for="chooseService"><i class="fas fa-chalkboard-teacher"></i> Subject</label>
+                                <input type="text" id="chooseService" name="subject" class="input-group"
+                                    placeholder="eg. I have a project" required autocomplete="off">
+                                <label for="msg"><i class="fa fa-edit"></i> Message</label>
+                                <textarea name="msg" id="msg" cols="30" rows="2" class="input-group"
+                                    placeholder="Type your message here..." required></textarea>
+                                <div class="d-grid">
+                                    <button class="btn btn-primary btn-lg my-4">
+                                        <i class="fa fa-location-arrow"></i> Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--Home Page End-->
+            <!--Contact End Here-->
         </div>
         <!-- content ends -->
 
