@@ -1,5 +1,4 @@
 # Portfolio
-Modern Portfolio Design By Subhash Yadav (Updated Version)    
-HTML, CSS, Bootstrap, Javascript
+Modern Portfolio Design Using HTML, CSS, Bootstrap, Javascript (Updated Version)
 
 ![alt text](/assets/images/cover.png)
