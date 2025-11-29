@@ -27,21 +27,16 @@ VERSION: 1.0.0
 ======= Theme Contents =======
 */
 
-/*@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Anton&family=Science+Gothic:wght@100..900&display=swap");
 
-@font-face {
-  font-family: "Segoe UI";
-  src: url(../fonts/SegoeUI.ttf);
-}
-
-@font-face {
+/*@font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-Regular.ttf);
 }
 @font-face {
   font-family: "Poppins";
   src: url(../fonts/Poppins-Regular.ttf);
-}
+}*/
 
 /*==!! 0.1. Browser Resets Start !!==*/
 * {
@@ -270,8 +265,9 @@ Content Style Start Here
   font-weight: 900;
   color: var(--primary);
   text-shadow: 4px 4px 4px var(--terniry);
-  font-family: "Segoe UI";
+  font-family: "Anton", sans-serif;
   font-weight: 900 !important;
+  text-transform: uppercase;
 }
 .landing-items h6 {
   font-size: 20px;
@@ -279,6 +275,7 @@ Content Style Start Here
   color: #fff;
   text-shadow: 0 0 5px var(--primary), 0 0 15px gold;
   letter-spacing: 5px;
+  text-transform: uppercase;
 }
 /*==!! </ 1.1. HomePage End > !!==*/
 
@@ -293,7 +290,7 @@ Content Style Start Here
   position: relative;
 }
 .profile-img::before {
-  content: "My Name Is";
+  content: "Hello!... I am";
   color: var(--primary);
   font-size: 14px;
   padding-top: 2px;
@@ -464,17 +461,17 @@ Content Style Start Here
 
 /*==!! 1.5. ExperiencesPage Satrt !!==*/
 .experinece-div {
-  height: 200px;
+  height: 300px;
   overflow: hidden;
   border-radius: 5px;
 }
 .experinece-div .certificate-img {
-  height: 200px;
+  height: 300px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -200px;
+  margin-top: -300px;
   overflow: hidden;
   transition: all 300ms linear;
   cursor: pointer;
@@ -495,7 +492,7 @@ Content Style Start Here
 }
 .experinece-div .exp-para {
   padding: 5px;
-  height: 100%;
+  height: 200%;
   background: rgba(0, 0, 0, 0.9);
   opacity: 0.9;
 }
@@ -624,7 +621,8 @@ Content Style Start Here
   font-size: 50px;
   font-weight: 900;
   user-select: none;
-  font-family: "Segoe UI";
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
 }
 .section-sub-title {
   margin: 0 auto;
@@ -729,11 +727,11 @@ Content Style Start Here
     min-width: initial;
   }
   .experinece-div {
-    height: 290px;
+    height: 420px;
   }
   .experinece-div .certificate-img {
-    height: 290px;
-    margin-top: -290px;
+    height: 420px;
+    margin-top: -420px;
   }
   .experinece-div .btn-lg {
     height: fit-content;
