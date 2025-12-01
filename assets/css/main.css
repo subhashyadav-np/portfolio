@@ -340,6 +340,7 @@ Content Style Start Here
   margin: 0 auto;
   padding: 0;
   border: 4px solid var(--primary);
+  border-radius: 5px;
 }
 .social-container a {
   margin: 0px;
@@ -406,8 +407,8 @@ Content Style Start Here
 .service-div-toggle {
   color: #fff;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.9);
-  height: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
   overflow: hidden;
   transition: all 300ms linear;
 }
