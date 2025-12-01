@@ -440,7 +440,7 @@ Content Style Start Here
   height: 220px;
   width: 100%;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 15px;
   background-position: center !important;
   background-size: cover !important;
 }
