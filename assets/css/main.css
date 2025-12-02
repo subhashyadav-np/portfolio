@@ -731,8 +731,13 @@ Content Style Start Here
     height: 465px;
   }
   .experinece-div .certificate-img {
+<<<<<<< HEAD
     height: 465px;
     margin-top: -465px;
+=======
+    height: 460px;
+    margin-top: -460px;
+>>>>>>> e59b128b6ee7e764be34b45546eaea53666d8756
   }
   .experinece-div .btn-lg {
     height: fit-content;
