@@ -51,5 +51,5 @@ function mainFunction() {
             this.parentNode.children[1].classList.toggle("open");
         });
     }
-
+    
 };

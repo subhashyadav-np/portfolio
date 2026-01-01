@@ -461,42 +461,10 @@ Content Style Start Here
 /*==!! </ 1.4. PortfolioPage End > !!==*/
 
 /*==!! 1.5. ExperiencesPage Satrt !!==*/
-.experinece-div {
-  height: 300px;
-  overflow: hidden;
-  border-radius: 5px;
-}
-.experinece-div .certificate-img {
-  height: 300px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -300px;
-  overflow: hidden;
-  transition: all 300ms linear;
-  cursor: pointer;
-}
-.experinece-div:hover .certificate-img {
-  margin-top: 0;
-}
-.experinece-div .certificate-img img {
-  width: 100%;
-}
-.exp-title-btn {
-  border-radius: 0;
-}
-.experinece-div .btn-lg {
-  height: 52px;
-  overflow: hidden;
-  border-radius: 0 !important;
-}
-.experinece-div .exp-para {
-  padding: 5px;
-  height: 200%;
-  background: rgba(0, 0, 0, 0.9);
-  opacity: 0.9;
-}
+    .timeline .sub-ul{
+        margin-left: 0;
+        padding-left: 15px;
+    }
 /*==!! </ 1.5. ExperiencesPage End > !!==*/
 
 /*==!! 1.6. SkillsPage Satrt !!==*/
@@ -528,6 +496,61 @@ Content Style Start Here
   transition: all 300ms linear !important;
 }
 /*==!! </ 1.6. SkillsPage End > !!==*/
+
+/*==!! </ 1.6. Education Page Start > !!==*/
+.timeline .main-ul {
+    border-left: 3px solid var(--primary);
+    border-radius: .8rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    position: relative;
+    padding: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    list-style none;
+    list-style-type: none;
+    text-align: left;
+    width: 80%;
+    margin-left: 10rem;
+}
+.timeline .date{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.timeline .date:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.timeline .date::before,
+.timeline .date::after{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.timeline .date::before {
+    content: attr(data-date);
+    left: -17rem;
+    text-align: right;
+    min-width: 12rem;
+    margin-top: 12px;
+}
+.timeline .date::after {
+    content: ' ';
+    box-shadow: 0 0 0 4px var(--primary);
+    transform: rotate(45deg);
+    left: -3.9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #222;
+}
+.timeline p{
+    opacity: .6;
+}
+/*==!! </ 1.6. Education Page End > !!==*/
 
 /*==!! 1.7. ContactPage Satrt !!==*/
 .contact-info-col {
@@ -643,9 +666,23 @@ Content Style Start Here
 
 /*==!! 4.0. Media Queries Satrt !!==*/
 @media screen and (max-width: 925px) {
-  .none-except-pc {
-    display: none;
-  }
+    .none-except-pc {
+        display: none;
+    }
+    .timeline .main-ul {
+        padding: 2rem;
+        padding-right: 0px;
+        margin-left: 7rem;
+    }
+    .timeline h4{
+        font-size: 18px;
+    }
+    .timeline .date::before {
+        left: -16rem;
+    }
+    .timeline .date::after {
+        left: -2.9rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -656,11 +693,38 @@ Content Style Start Here
   .profile-img {
     margin-top: 50px;
   }
-  .service-div button,
-  .experinece-div button {
+  .service-div button {
     font-size: 17px;
     padding: 15px 0;
   }
+  .timeline .main-ul {
+        width: 80%;
+        margin-left: 6rem;
+    }
+  .timeline .date {
+        font-size: 13px;
+    }
+    .timeline h4{
+        font-size: 15px;
+    }
+    .timeline h6{
+        font-size: 13px;
+    }
+    .timeline p{
+        font-size: 12px;
+    }
+    .timeline a{
+        font-size: 12px;
+    }
+    .timeline .date::before {
+        left: -15rem;
+    }
+    .timeline .date::after {
+        margin-top: 6px;
+        left: -2.3rem;
+        height: .5rem;
+        width: .5rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -719,24 +783,21 @@ Content Style Start Here
     height: fit-content;
     overflow: hidden;
   }
-  .service-div button,
-  .experinece-div button {
+  .service-div button {
     font-size: 17px;
     padding: 15px 0;
   }
   .port-item .port-img img {
     min-width: initial;
   }
-  .experinece-div {
-    height: 470px;
-  }
-  .experinece-div .certificate-img {
-    height: 470px;
-    margin-top: -470px;
-}
-  .experinece-div .btn-lg {
-    height: fit-content;
-  }
+  .timeline .main-ul {
+        width: 70%;
+        margin-left: 5rem;
+    }
+    .timeline .sub-ul{
+        font-size: 10px;
+        padding-left: 10px;
+    }
   .btn-extra-text {
     display: none;
   }
