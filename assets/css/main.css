@@ -474,13 +474,13 @@ Content Style Start Here
 }
 .skill label {
   color: #fff;
-  font-size: 18px;
-  font-weight: 900;
+  font-size: 16px;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 .skill-bar {
   margin-top: 5px;
-  height: 10px;
+  height: 5px;
   width: 100%;
   background: #fff;
   overflow: hidden;
@@ -793,6 +793,12 @@ Content Style Start Here
   .timeline .main-ul {
         width: 70%;
         margin-left: 5rem;
+    }
+    .timeline h4{
+        font-size: 13px;
+    }
+    .timeline h6{
+        font-size: 12px;
     }
     .timeline .sub-ul{
         font-size: 10px;
