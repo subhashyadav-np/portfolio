@@ -268,6 +268,7 @@ Content Style Start Here
   font-family: "Anton", sans-serif;
   font-weight: 900 !important;
   text-transform: uppercase;
+  letter-spacing: 5px;
 }
 .landing-items h6 {
   font-size: 20px;
@@ -756,6 +757,7 @@ Content Style Start Here
   }
   .landing-items h1 {
     font-size: 50px;
+    margin-top: 6rem;
   }
   .landing-items h6 {
     margin-top: 20px;
