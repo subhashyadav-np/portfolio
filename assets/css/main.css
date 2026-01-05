@@ -438,26 +438,12 @@ Content Style Start Here
 /*==!! </ 1.3. ServicePage End > !!==*/
 
 /*==!! 1.4. PortfolioPage Satrt !!==*/
-.port-item {
-  height: 220px;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 15px;
-  background-position: center !important;
-  background-size: cover !important;
-}
-.port-detail {
-  transition: all 450ms linear;
-}
-.port-item .port-img {
-  height: 220px;
-  width: 100%;
-  overflow: hidden;
-  background-size: cover !important;
-  background-position: center !important;
-}
-.port-item:hover .port-detail {
-  margin-top: -220px;
+.port-image{
+    height: 236px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: cover !important;
 }
 /*==!! </ 1.4. PortfolioPage End > !!==*/
 
@@ -691,9 +677,6 @@ Content Style Start Here
     height: 480px;
     overflow: hidden;
   }
-  .profile-img {
-    margin-top: 50px;
-  }
   .service-div button {
     font-size: 17px;
     padding: 15px 0;
@@ -769,9 +752,6 @@ Content Style Start Here
   .section-sub-title {
     font-size: 14px;
   }
-  .profile-img {
-    margin-top: 0;
-  }
   .about-detail {
     margin-top: 20px;
   }
@@ -789,8 +769,17 @@ Content Style Start Here
     font-size: 17px;
     padding: 15px 0;
   }
-  .port-item .port-img img {
-    min-width: initial;
+.port-item .port-title {
+      font-size: 16px;
+  }
+  .port-item .port-desc{
+      font-size: 14px;
+  }
+  .port-item a{
+      font-size: 10px;
+  }
+  .port-image{
+      height: 150px;
   }
   .timeline .main-ul {
         width: 70%;
